@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+	<!-- Silly script to close the window -->
+    <script>
+    	let ask = confirm("Are you sure you want to be here?");
+    	if(!ask){
+    		window.close();
+    	}
+    </script>
+
+    <!-- Header for the site, This is usually the Tab label for the site -->
+	<head>
+		<!-- Text on the tab -->
+		<title>Bloggies</title>
+		<!-- Icon on the tab for the site -->
+		<link rel="icon"
+		href="images/main/StarbyPrism72x72.png" sizes="16x16">
+		<!-- This is the reference to your main.css, if you have one
+			If you don't then it errors and you have plain text -->
+		<link rel="stylesheet" href="main.css">
+		<!-- Loads in images and css for social media icons -->
+		<link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+
+	<!-- Page Contents -->
+	<body>
+		<!-- Top of the page -->
+		<div class="intro">
+		<h1 id="name" name="intro">Riley's<br>Techy Tuesday<br>Blogs<h1>
+	    </div>
+
+	    <!-- Blog post library -->
+	    <div>
+	    	<br>
+	    	<center>
+	    		<h1>My Bloggie Woggies</h1>
+	    	</center>
+	    	<br>
+	    </div>
+	    <div class="blogs">
+	    	<div class="column">
+	    		<div class="card" id="card1">
+	    			<script>
+	    				let heading="RenPy";
+
+	    				document.getElementById("card1").innerHTML = `<h3>${heading}</h3>`;
+
+	    			</script>
+	    			<a href="post1.html">
+	    				<img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2019/02/chicken-biryani-recipe-500x500.jpg"
+	    				alt="image" height="300" width="400"/>
+	    			</a>
+	    			<p>Some Text</p>
+	    		</div>
+	    	</div>
+	    	<div class="column">
+	    		<div class="card">
+	    			<a href="post1.html">
+	    				<img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2019/02/chicken-biryani-recipe-500x500.jpg"
+	    				alt="image" height="300" width="400"/>
+	    			</a>
+	    			<h3>Heading</h3>
+	    			<p>Some Text</p>
+	    		</div>
+	    	</div>
+	    	<div class="column">
+	    		<div class="card">
+	    			<a href="post1.html">
+	    				<img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2019/02/chicken-biryani-recipe-500x500.jpg"
+	    				alt="image" height="300" width="400"/>
+	    			</a>
+	    			<h3>Heading</h3>
+	    			<p>Some Text</p>
+	    		</div>
+	    	</div>
+	    </div>
+
+	    <!-- About me Section -->
+	    <div>
+	    	<center>
+	    		<h1>About Me</h1>
+	    		<div>
+	    			<img src="images/main/mypic.png"
+	    			alt="My Pic" height="400" width="400" id="mypic">
+	    		</div>
+	    	</center>
+	    	<br>
+	    	<p id="about">I am a cutie...</p>
+	    	<br>
+	    </div>
+
+	    <!-- Footer -->
+	    <footer>
+	    	<center>
+	    		<div>
+	    			<p>Copyright &copy; 2024 All Rights Reserved by Riley</p>
+	    			<p>Social Media</p>
+	    			<a href="#" class="fa fa-facebook"></a>
+	    			<a href="#" class="fa fa-instagram"></a>
+	    		</div>
+	    	</center>
+	    </footer>
+	</body>
+</html>
