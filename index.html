@@ -1,12 +1,4 @@
 <!DOCTYPE html>
-	<!-- Silly script to close the window -->
-    <script>
-    	let ask = confirm("Are you sure you want to be here?");
-    	if(!ask){
-    		window.close();
-    	}
-    </script>
-
     <!-- Header for the site, This is usually the Tab label for the site -->
 	<head>
 		<!-- Text on the tab -->
@@ -36,46 +28,25 @@
 	    	</center>
 	    	<br>
 	    </div>
-	    <div class="blogs">
-	    	<div class="column">
-	    		<div class="card" id="card1">
-	    			<script>
-	    				let heading="RenPy";
+	    <div class="blog" id="blogs">
+	    	<script type="text/javascript" src="posts/directory.js"></script>
+	    	<script>
 
-	    				document.getElementById("card1").innerHTML = `<h3>${heading}</h3>`;
-
-	    			</script>
-	    			<a href="post1.html">
-	    				<img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2019/02/chicken-biryani-recipe-500x500.jpg"
-	    				alt="image" height="300" width="400"/>
-	    			</a>
-	    			<p>Some Text</p>
-	    		</div>
-	    	</div>
-	    	<div class="column">
-	    		<div class="card">
-	    			<a href="post1.html">
-	    				<img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2019/02/chicken-biryani-recipe-500x500.jpg"
-	    				alt="image" height="300" width="400"/>
-	    			</a>
-	    			<h3>Heading</h3>
-	    			<p>Some Text</p>
-	    		</div>
-	    	</div>
-	    	<div class="column">
-	    		<div class="card">
-	    			<a href="post1.html">
-	    				<img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2019/02/chicken-biryani-recipe-500x500.jpg"
-	    				alt="image" height="300" width="400"/>
-	    			</a>
-	    			<h3>Heading</h3>
-	    			<p>Some Text</p>
-	    		</div>
-	    	</div>
+	    		for(const post of posts){
+	    			document.getElementById("blogs").innerHTML += `
+	    			<div class="column">
+	    				<div class="card">
+	    					<h3><a href="${post.href}">${post.title}</a></h3>
+	    					<p>${post.desc}</p>
+	    				</div>
+	    			</div>
+	    			`
+	    		}
+	    	</script>
 	    </div>
-
 	    <!-- About me Section -->
-	    <div>
+	    <div class="aboutme">
+	    	<br>
 	    	<center>
 	    		<h1>About Me</h1>
 	    		<div>
