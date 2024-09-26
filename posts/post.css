@@ -4,15 +4,18 @@ body{
 	font-family: monospace;
 }
 p {
-	font-size: 18px;
+	display: inline;
+	font-size: 20px;
 	color: #d5d2d2;
 	font-weight: bold;
 	transform: scaleY(115%);
 	line-height: 1.5;
 	margin-top: 20px;
+	overflow-wrap: break-word;
+
 }
 .title{
-position: relative;
+position: static;
 height: 100px;
 margin-left: 15px;
 font-size: 36px;

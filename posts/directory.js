@@ -1,12 +1,12 @@
 var posts = [
 	{
-		"title": "Post 1",
-		"href": "posts/post1/post1.html",
-		"desc": "Something new"
+		"title": "Ren'Py",
+		"href": "posts/1/renpy.html",
+		"desc": "A Visual Novel Engine"
 	},
 	{
-		"title": "Post 2",
-		"href": "posts/post1/post2.html",
+		"title": "Bloggies",
+		"href": "posts/2/blog.html",
 		"desc": "Something new 2"
 	}
 	]

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+	<head>
+		<title>Ren'Py</title>
+		<link rel="stylesheet" href="../post.css">
+	</head>
+	<body>
+		<div class="title">
+			<h1>Ren'Py</h1>
+		</div>
+		<div class = "box" style="float:right">
+			<iframe height="350" width="620"
+				src="https://www.youtube.com/embed/3swejF27wto">
+			</iframe>
+		</div>
+		<div style="margin-top: 20px; margin-left: 10px; margin-right: 10px">
+		<p>
+			Welcome!! To the first blog post of this site!! In this post, we'll be taking a closer look at Ren'Py, a visual novel engine that simplifies the code base to allow anyone to start making a story. I took some time to go through the introduction to this program and see what we could make in a few hours.
+			<br>
+			<br>
+			Ren'Py provides us with a base visual novel box that serves to function basic mechanics and structure. We basically download the program and are given a package with an executable that runs a client to help the user navigate the code base and test out their projects. There is a tutorial project set in the download as a visual novel and an example story to use as reference. The tutorial will talk you through the basic functions of this client and how to traverse the code. I come from a background in coding with and understanding of variable declaration and logic statements. While there isn't any crazy functionality in this Ren'Py code library, you can do a lot with some creativity. For now, the basic mechanic they have is a choice notation in the form of if/else or switch statements, with some scene labels that look like function or class blocks. The tutorial tells you how to use these functions and you can feel free to peruse the tutorial project itself to test materials and code yourself. Once you feel confident, creating a project is done with a click of a button.
+			<br>
+			<br>
+			I started up a new project and was given a file structure with some Ren'Py files and some saving features and one script file. In the script file there was one line with a unset character and scene. You can play this project as it is but it consists of what is equivalent to a "Hello World" of Ren'Py. You can add to this file structure as needed as long as you set up references to the files as needed. For example, I thought it may be better to organize the images in a separate folder, so I put the images in there and referenced the folder directory in the image reference. I learned this can also work with other scripts and audio. It's a good practice to plan out your achitecture when taking on any big project but to also experiment with how the code works to understand what the best file structure may be.
+			<br>
+			<br>
+			After fiddling around with the new project, I got started with adding characters variables at the top and changing the pictures in the game. I stole the backgrounds from the example project, "The Question", to use for my own project. The aspect ratio is set initially upon creation of the story, but doesn't auto scale the images if you reference them. Due to "The Question" being smaller aspect ratio than my own project, I had to resize the background images in Paint in order for them to work. That ended up taking a lot of time, but once I got my characters loaded in I was ready to write a script.
+			<br>
+			<br>
+			Now, writing the script becomes way less code-y and more like story writing. I was getting a bit into a whole different mindset and just tried to think of a compelling story to write. But, I suppose that goes to show that this program is mainly for story creators to be able to easily maneuver without having to understand code fully to be able to write a story. However, I came here to code! And I felt I was getting side tracked. So in order to give myself more of a challenge I started add player choice prompts that lead to differet dialogues or new variables to be set. 
+			<br>
+			<br>
+			You can set a variable value like you would in code. For this example, I tried a Boolean expression that would trigger true if a player chose an one option and remained false otherwise. Debugging it I just had the text boxes print out things had if statements trigger the text if the boolean worked. This proved to me that you can use some python logic like basic for loops and if statements would work as long as we indented respectively. Ren'Py does have their own <a href="https://www.renpy.org/doc/html/">documentation</a> if there is a need to explore the extent of python that can be used in this environment.
+			<br>
+			<br>
+			I also wanted to see if I can make a player choice can dynamically change the text from then on. For example, if at the beginning of the game if the player can pick their pronouns, would there be an easy way to write script to then reflect their choice? How would that look? It seemed the appropriate puzzle to solve next so I started at it. At first I was thinking of storing a string the to refer to the choice, but then realized that a pronoun is at least two different tenses as well as a plural grammer change if they chose a non-binary option. So, I thought, what if instead of the script having a reference to the player it just had three options that would fill the space of text refering to the player. That way the player would just need a value of 0-2 and the script would be written in each tense for that portion so it will stil flow well but be dynamic. This solution worked well and while the scripting would then need an extra step when referring to the player, I'd rather this than having unnatural language or refuse the choice for the player.
+			<br>
+			<br>
+			This is how I ended the day with Ren'Py and to be honest I got a lot done and made a start of a game pretty easily. I spent way less time actually coding and more time focusing on story which I think is good for those who want to make a visual novel or a book. It was really easy to get started and hop right in and I highly encourage it for people who just want to write a story. Having a liiittlle background in coding may go a long way in making the game more interacable but is totally optional and not necessary to tell a good story.
+		</div>
+		</p>
+		
+	</body>
+</html>
